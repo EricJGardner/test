@@ -1,0 +1,112 @@
+TTS Day 6 CSS2 11/23/20
+
+Resets- a short, minified, set of rules that resets all HTML elements to a consistent baseline. Every browser has its own "user agent" stylesheet. CSS authors can force every browser to set its styles to null, thus avoiding cross-browser differences.
+ Resets are open source and constantly updated, check https://cssreset.com/
+
+Flexbox- flexible box layout makes it easier to design a layout structure without positioning. Makes a site phone friendly, tablet friendly, etc. A container becomes flexible by setting the display property to flex.
+HTML
+<div class="flex-container">
+CSS
+.flex-container {
+	display: flex;
+ }
+https://css-tricks.com/snippets/css/a-guide-to-flexbox
+
+Flexbox is a single direction layout concept, primarily laying out either in horizontal or vertical columns 
+
+Properties for the Parent (flex container) *CSS columns have no effect on a flex container
+  Display: defines a flex container; inline or block depending on the given value. It enables a flex content for all its direct children.
+
+row(default): left to right in ltr; left to right in rtl
+row-reverse: right to left in ltr; left to right in rtl
+column: same as row but top to bottom
+column-reverse: same as row-reverse but bottom to top
+
+flex-wrap: by default, flex items will try to fit onto one line. flex-wrap can change that.
+ nowrap(default): all flex items will be on one line
+ wrap: flex items will wrap onto multiple lines, from top to bottom
+ wrap: revers: flex items will wrap onto multiple lines from bottom to top
+
+flex-flow: shorthand for the flex-direction and flex-wrap, which together define the flex container's main and cross axes. The default is 'row nowrap'
+
+justify-content
+ flex-start (justifies left)-items are packed towards the start
+ flex-end (justifies right)-'' towards the end
+ start: items are packed towards the start of the writing-mode direction
+ end: items are packed towards the end of the writtng-mode direction
+ left: items are packed towards the left edge of the container, unless that doesn't make sense with the flex-direction, then it behaves like start
+ right: opposite of left
+ center: items are centered along the line
+ space-between: items are evenly distributed in the line; first item is on the start line, last item is on the end line
+ space-around: items are evenly distributedin the line with equal space between them. Visuallythe spaces aren't equal, since all the items have equal space on both sides. the first item will have one unit of space against the container edge, but two units of space between the next item bc that next item has its own spacing that applies
+ space-evenly: items are distributed so that the spacng between any two items (and the space to the edges) is equal
+ 
+
+'safe' and 'unsafe'- can be paired with the above values. using 'safe' ensures that however you do the positioning, you can't puch an element such that it renders off-screen.
+
+align-items: defines the default behavior for how flex items are laid out along the cross axis on the current line. It is the 'justify-content' for the cross-axis (perpendicular to the main-axis)
+ stretch(default): strecth to fill the container (still respect max-wisth/min-width)
+ flex-start/ start/ self-start: items are placed at the start of the cross-axis. Difference between these is subtle, is about respecting the flex-directionrules or writing-mode rules
+ flex-end/ end/ self-end: items are placed at the end of the crossaxis. Difference is subtle
+ center: items are centered in the cross axis
+ baseline: items are aligned such as their baselines align
+
+align-content- this align's a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis
+ *this property only takes effect on multi-line flexible containers, where flex-flow is set to either wrap or wrap-reverse. A single line flexible container (i.e. where flex-flow is set to its default value, no-wrap) will not reflect align-content.
+
+ normal(default): items are packed in their default position as if no value was set
+ flex-start/start: items packed to the start of the container. The more supported flex-start honors the flex-direction while start honors the writing mode direction
+ flex-end/end: opposite of start
+ center: items centered in the container
+ space-between: items evenly distributed; the first line is at the start of the container and the last one is at the end
+ space-around: items evenly distributed with equal space around each line
+ space-evenly: items are evenly distribued with equal space around them
+ stretch: lines stretch to take up the remaining space
+*safe and unsafe can modifier keywords can be used in conjunction with all the rest of these keywords
+
+Properties for Children (flex items)
+
+order-by default, flex items are laid out in the source order. However the 'order' property controls the order in which they appear in the flex container.
+.item {
+	order: 5;
+}
+
+ flex-grow- defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of available space inside the flex container the item should take up.
+If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others. (negative numbers are invalid)
+ flex-shrink- defines the ability for a flex item to shrink if necessary
+ flex-basis-defines the default size of an element before the remaining space is distributed. Can be a length or a keyword. the 'auto' keyword means "look at my highth and width property". The 'content' keyword measn "size it based on the item's content". 
+If set to 0, the extra space around content isn't factored in. If set to 'auto' the extra space is distributed based on its flex-grow value.
+ flex- this is the shorthand for flex-grow, flex-shrink, and flex-basis combined. The second and third parameters (flex-shrink and flex-basis)are optional. the default is '0 1 auto', but if you set it with a single number value, it's like '1 0'
+     recommended that you use the shorthand
+ align-self- allows the fdefault alignment (or the one specified by align-items) to be overriden for individual flex items.
+.item {
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+
+Graphics
+ Lossy- image formats that do not store a perfect copy of the original image and thus have smaller file sizes
+ Lossless- stores an exact pixel-by-pixel prepresentation of the image, but in doing so requires more space
+Raster vs Vector- raster loses quality when resizing, vector does not
+
+Units of measurement
+em: relative to the font-size of the element
+rem: relative to the font-size of the root element
+vw: relative to 1% width of the viewport
+vh: relative to 1% height of the viewport
+vmin: relative to 1% of the smaller dimension: either height or width
+vmax: relative to 1% of the larger dimension- either height or width
+%: percentage
+
+*Look at drop down menus*
+
+Responsive web design
+	uses both HTML and CSS to automatically resize, hide, shrink, or enlarge a website to make it look good on all different kinds of devices
+
+viewport- the screen or window you are looking at
+meta tag- gives the browser information, but is not displayed on the page. Usually goes in the head
+
+*www.cssmediaqueries.com*
+@media is used to determine the browser resolution. Allows you to target CSS rules based on screen size, device-orientation, or display-density, for example. This means you can use CSS Media Queries to tweak a CSS for an iPad, printer, or create a responsive site
+
+
+

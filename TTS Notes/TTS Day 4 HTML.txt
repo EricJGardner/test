@@ -1,0 +1,48 @@
+TTS Day4 HTML 11/19/20
+
+Tags
+Basic page
+<!DOCTYPE html>-informs the browser which version of html will be used
+<html>  -root element, represents the root (top level element) of an HTML doc
+	<head>   -head contains descriptive information about the page, like title as well as                   things like <meta> tags and links to style sheets
+	  <title></title>
+	</head>
+
+	<body>    -contains the content of the HTML doc, there can be only one body
+
+	</body>
+</html>
+ 
+root_directory- every project has a root directory, top level folder where all files for the project will exist
+assets - a sub-directory under the root, where all the items used on the website will be saved
+
+<a> anchor tag- creates a hyperlink- a link to another location
+  common attributes for <a>
+ href- the URL or destination the hyperlink points to
+ target- Specifies where to display the linked URL. Most common target values
+  _self: Load the URL into the same browserwindow as the current one. Default behavior if target     is not used	
+  _blank: Load the URL into a new browser window or tab depending on browser config
+
+Images
+<img> self closing tag
+ attributes
+  src- the image URL. Mandatory for <img> element
+  alt- defines the description of the image. Users will see this if the umage URL is wrong, or       if image is not yet downloaded or not in a format supported formats
+  height- the height of the image in pixels
+  width- width of image in pixels
+
+Tables
+<table> for tabular data, similar to a spreadsheet
+Nested tags build the anatomy of the table
+ <tr>- represents start of a new row
+ <td>- represents start of a new columnn within a row
+ <th>- represents special header column. Should only be used in the first row in place of the        standard <td>. Headers will appear in bold.
+
+Relative vs absolute paths- always use relative so if the source folder moves, the path name will still work
+
+<div> - creates a container for lines of code so that you can apply styling to only that section of code
+coding principle- DRY- "Don't Repeat Yourself" or KISS "Keep It Simple Stupid"
+Instead of style="color:red;" for each line of text, do 
+<div style="color:red;"> and it will apply to everything in between <div> and </div>
+
+  

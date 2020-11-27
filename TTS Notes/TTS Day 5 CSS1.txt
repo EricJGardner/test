@@ -1,0 +1,65 @@
+TTS Day 5 CSS1 11/2
+
+All info on w3schools.com
+
+decimal system
+0123456789
+one digit represents 10 values
+two digits represent 100 values
+
+Hexadecimal system
+0123456789ABCDEF
+A=10, B=11, etc.
+
+Syntax    (value)           (value)
+h1 {color;blue font-size;12px;}
+|     |            |      
+selector       property 
+   property
+
+h3 {
+	color:blue;       <-- makes all h3's blue
+   }
+
+* CSS always goes in head of code*
+can do font-size, font-family, color
+-not all browsers will have same fonts, so use 3 values i.e., "Times New Roman", Times, serif
+text-align
+if you want formatting to apply to more than one selector, add a comma- h3, h6
+
+ID selector matches an element based on the value of the element's id attribute
+In order for the element to be selected, its attribute must match exactly the value given the selector
+#id_value{property:value}
+id_value is a name you create
+#best {
+	color:red;
+	}
+<h3 id="best">
+The id of an element is unique within a page, so the id selector is used to select only one unique element
+
+Class selectors
+ Selects HTML elements within a specific class attribute.
+ To select elements within a specific class, use a period (.), followed by class name
+.name{property:value}
+ can be used in more than one place in a page
+<h3 class="name">
+Cascading styles- goes from general to specific
+ID override class override tags. Only way to override an ID is with another ID
+
+Margin- set in page size
+Border-goes in from page size
+Padding- affects inside the border
+
+BEST PRACTICES-
+Instead of styling with the header, create a style sheet that you can use over and over for any page
+
+Within the head of your HTML, write <link> to connect to CSS style sheet. 
+common attributes for a link tag-
+ type- comon use is to define the type of style sheet linked. most common is txt/css, which indicates Cascading Style Sheet Format
+ rel- This lets the browser know what type of file to link. In this case a stylesheet
+ href- specifies the URL of the linked resource
+
+Pseudo Class Selectors- a keyword that reps what state something may be in. it is added to a selsector by a colon (:). It allows you to style selected elements only when they are in a certain state.
+ LINKS-4 states of a link- unvisited, visited, hover(mouseover), and active
+
+

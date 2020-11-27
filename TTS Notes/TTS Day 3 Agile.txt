@@ -1,0 +1,102 @@
+TTS Day 3 11/18/20
+Git is an essential tool in the developers toolkit. Git stores your files like a stream of snapshots, allowing you and other collaborators to make changes to projects and keep everything in sync.
+The Terminal is much like the finder, but less pretty. There are just a few basic commands needed to navigate around in Terminal. Using Terminal, we often refer to folders as directories. 
+
+Guide to Agile
+https://www.youtube.com/watch?v=fCE1PmtbGXQ&feature=youtu.be&t=673
+
+Development methodologies outline the systems used to structure, plan, and control the process of building software
+
+Preiously, developers used the wateefall method- a strict linear method of sequential phases, each phase having to be complete before going to the next one
+
+(from yesterday) guide to Learngitbranching
+https://www.youtube.com/watch?v=dG0ke9vILQM&t=376s
+
+Agilemanifesto.org- basic list of principles for non-linear development
+
+Agile- allows for changes in the development plan
+ - allows for changes in the development pattern
+ - short, repetitive, development-feedback cycles
+ - frequent, iterative deployment
+
+Pros-minimizes risk through iterative development, testing, and evaluation
+ - rapid software delivery
+ - integrates user feedback into the development cycle
+
+Cons- relies on real time communication
+ - lag in new user documentation
+ - feedback and iterative release can be time and labor intensive
+ - can be inefficient in large organizations
+
+Possible interview questions-
+What is the difference between Agile and Scrum?
+Important terms that they might ask about
+
+Notes on Agile Dev. Video
+  Iron Triangle of Project Management
+    Waterfall- Plan Driven   Agile- Value and Vision Driven
+Agile is a team based alternative to some of the traditional projectmgmt techniques. Prefer to start executing earlier, delivering frequently, repeatedly evaluate objectives, and repeatedly confirm satisfaction.
+
+Principles- 
+1.Individuals and Interactions over processes and tools
+2.working software over comprehensive documentation
+3.customer collaboration over contract negotiation
+4.responding to change over following a plan
+
+SCRUM 
+-Product Backlog- collection of user stories (wishlist of desired features)
+ Scrum master- like a project manager
+Release Planning- identify user stories to go into product backlog, priorites them and estimate how long each one will take
+Sprints- short duration milestones (couple of days to a month) breaks up product backlog
+BURNDOWN CHART (#1 feature of Scrum)- provides a day by day measure of the amount of work that remains in a given sprint or release
+burndown velocity- slope of the burndown graph, from start to zero 
+DAILY SCRUM- fast paced standup meetings to check on progress and problems
+Sprint Retrospective- team reflects on what went right and what needs improvement
+OnTime- Scrum management software
+Product Owner *)Maximizes the value of the product(Eye on Market, Scope vs Schedule)
+		Managing the product backlog (Creation, Management, Prioritization)
+		Represent the desire of stakeholders
+Scrum Master  *) a "servant leader"-facilitates development, removes impediments for dev team, bring changes that increase productivity for team, etc
+
+Scrum Process Cycle
+	Scrum Sprint- Vision>Product Backlog>Sprint Backlog [daily scrum]>Product Increment
+					         ^             v
+					(Sprint Planning<----Sprint Review Retrospective)
+Product Backlog- (property of product owner) High level features, estimates & priorities, no tasks, highly changeable
+	Grooming session- every 2 weeks, owner meets with SM to reevaluate
+Epics- large user stories
+Sprint backlog- Decomposed tasks nec to build features, etc, for next sprint
+Story Points- estimate how long it will take to complete a user story
+Burndown Chart- shows progress in completing the sprint
+
+AGILE
+Root Cause Analysis-identifying cause of problems, identifying processes to address them
+Ishikawa- Fishbone Diagram
+PDCA- Plan, Do, Check, Act
+Story Board (KANBAN)KANBAN uses a chart with categories to identify what needs to be done, in progress, next, blocked, etc (sushi menu)
+  WIP (Work in Progress)limits- limits what can be in progress category in chart
+
+Grooming Sessions
+ MoSCoW- Must, Should, Could, Would (not)
+Sprint Planning-Poker, T Shirt sizes, Fist of Five Technique, Delphi method-ways of identifying difficulty/time req for tasks and assigning them to proper team members
+Sprint retrospective-what went well, could be improved, to stop doing, to keep doing, & to start doing (start, stop, keep, more, or less)
+Reporting- Status, baselines, Milestones, Burndown, Risks & Issues, Defects & Blockers, New & Outstanding items
+Best Practice- avoid common traps of sprint planning, stand up meetings, retrospective
+
+Agile Transformation- Scrum Master needs to be impartial, avoiding common problems that prevent an efficient, productive standup (same people always talking, no one talking, too long meeting, etc.)
+
+Agile Process Implementation- (Phase 1)Form Agile Committee, A3 Root Cause Analysis, Agile Training, Create Product Backlog, Sprint Zero Planning
+		(Phase 2) Create Scrumboard, Daily Standup Meetings, Sprint Review, Retrospective, Reporting
+		(Phase 3) Agile Coaches, Formal Training, New Hires (Scrum Committee>{Scrum of Scrums, Improved Reporting, Quarterly/A3 RCA})
+
+
+Agile heirarchy
+Sub-task
+ 1. Smallest item in Agile practice
+ 2. Combine to make up tasks
+Task
+ 1. single development effort
+ 2. should include acceptance criteria ex. "make all gallery images square"
+Epic
+
+ 

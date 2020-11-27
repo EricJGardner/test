@@ -1,0 +1,45 @@
+TTS Week 2 Day 2 Javascript
+Strings and numbers
+console.log("Hello World")
+will show Hello World in console log
+console.log(5+6) will show 11
+  ("5+6") will show 5+6
+" "-string
+numbers- literal
+
+JavaScript runs on browsers or on a node
+
+3 keywords used to declare variables- var, let, const
+ they are used to declare the scope and mutability
+'let' is the new 'var'
+you don't have to actually assign a variable when you create it (declare). A variable with no value is called unassigned
+
+let x=5;
+console.log() //syntax rule
+ variables can be reassigned unless it is declared const (constant)
+const variables cannot be changed
+
+let x; //variable declaration
+x=5;  //variable assignment
+name variables in camelcase- yourVariable
+
+you can only declare a variable once, but it can be reassigned i.e,
+you can only write let x= once, but yu can write x= more than once
+
+If statements- based on booleans (T or F)
+if(x) {
+	console.log(true);
+}
+else {}
+Flow Control- Comparison Operators
+< less than
+> greater than
+<= less than or equal to
+>= greater than or equal to
+== loose equality (compares values)
+=== strict equality (compares value and type)
+!= values do not equal
+!== same type, but different value
+
+to limit number to hundredths place my_number.toFixed(2)
+

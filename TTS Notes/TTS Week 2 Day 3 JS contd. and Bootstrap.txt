@@ -1,0 +1,50 @@
+TTS Week 2 Day 3 JavaScript contd. and Bootstrap https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+https://docs.google.com/document/d/1-UbjUlMpNmR8wgmk1leqiyD2gmG4susnoEWBtjmecgE/edit?usp=sharing
+^ how to connect bootstrap to your html
+
+<meta charset="utf-8"> - Necessary for proper translation to browser
+ 
+state = "LA";
+if (state == "VA") {
+	salesTax = 0.035;
+} else {
+	if (state == "HI"){      <--- if else if statement (more than 2 var)
+	salesTax = 0.05;
+	} else {
+	salesTax = 0.093;
+	{
+For loop
+   initialization   increment
+        v            v
+for (let i=o; i<=9; i++)
+                ^
+           comparing variable to desired breakpoint
+loop will stop when breakpoint is met	 
+
+let turkeyQuantity;
+turkeyQuantity = 5;
+console.log("Thank you for your order of", turkeyQuantity, "turkeys");
+
+for (let i = 1; i <= turkeyQuantity; i = i + 1) {
+	console.log("Gobble!");
+}
+console.log("Have a happy Thanksgiving!");
+
+to have "Gobble!"s on one line
+add let gobbleString = ""; variable
+gobbleString = gobbleString + "Gobble! ";
+console.log(gobbleString);
+i = i+1 is the same as i++
+*Beware of infinite loops!*
+Loop will not execute if statement is false from the beginning
+
+While loop
+"For" loop we choose starting point, how to iterate and where the breakpoint is. 'While' loop simply looks for a conditional to be true
+turkeyQuantity = 5;
+	let i=1;
+	while (i <= turkeyQuantity){
+		console.log("Gobble!");
+			i=i+1;
+	}
+	console.log("Have a happy Thanksgiving")

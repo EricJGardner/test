@@ -1,0 +1,17 @@
+            h1 {
+                color: purple;
+                font-size: 18px;
+                text-align: center;
+                padding-top: 20px;
+                padding-right: 50px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+            }
+            .sexy {
+                color: green;
+                padding-top: 5px;
+                padding-right: 5px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                border-style: dotted;
+            }

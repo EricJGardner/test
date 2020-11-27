@@ -1,0 +1,57 @@
+
+Notes on Agile Dev. Video
+  Iron Triangle of Project Management
+    Waterfall- Plan Driven   Agile- Value and Vision Driven
+Agile is a team based alternative to some of the traditional projectmgmt techniques. Prefer to start executing earlier, delivering frequently, repeatedly evaluate objectives, and repeatedly confirm satisfaction.
+
+Principles- 
+1.Individuals and Interactions over processes and tools
+2.working software over comprehensive documentation
+3.customer collaboration over contract negotiation
+4.responding to change over following a plan
+
+SCRUM 
+-Product Backlog- collection of user stories (wishlist of desired features)
+ Scrum master- like a project manager
+Release Planning- identify user stories to go into product backlog, priorites them and estimate how long each one will take
+Sprints- short duration milestones (couple of days to a month) breaks up product backlog
+BURNDOWN CHART (#1 feature of Scrum)- provides a day by day measure of the amount of work that remains in a given sprint or release
+burndown velocity- slope of the burndown graph, from start to zero 
+DAILY SCRUM- fast paced standup meetings to check on progress and problems
+Sprint Retrospective- team reflects on what went right and what needs improvement
+OnTime- Scrum management software
+Product Owner *)Maximizes the value of the product(Eye on Market, Scope vs Schedule)
+		Managing the product backlog (Creation, Management, Prioritization)
+		Represent the desire of stakeholders
+Scrum Master  *) a "servant leader"-facilitates development, removes impediments for dev team, bring changes that increase productivity for team, etc
+
+Scrum Process Cycle
+	Scrum Sprint- Vision>Product Backlog>Sprint Backlog [daily scrum]>Product Increment
+					         ^             v
+					(Sprint Planning<----Sprint Review Retrospective)
+Product Backlog- (property of product owner) High level features, estimates & priorities, no tasks, highly changeable
+	Grooming session- every 2 weeks, owner meets with SM to reevaluate
+Epics- large user stories
+Sprint backlog- Decomposed tasks nec to build features, etc, for next sprint
+Story Points- estimate how long it will take to complete a user story
+Burndown Chart- shows progress in completing the sprint
+
+AGILE
+Root Cause Analysis-identifying cause of problems, identifying processes to address them
+Ishikawa- Fishbone Diagram
+PDCA- Plan, Do, Check, Act
+Story Board (KANBAN)KANBAN uses a chart with categories to identify what needs to be done, in progress, next, blocked, etc (sushi menu)
+  WIP (Work in Progress)limits- limits what can be in progress category in chart
+
+Grooming Sessions
+ MoSCoW- Must, Should, Could, Would (not)
+Sprint Planning-Poker, T Shirt sizes, Fist of Five Technique, Delphi method-ways of identifying difficulty/time req for tasks and assigning them to proper team members
+Sprint retrospective-what went well, could be improved, to stop doing, to keep doing, & to start doing (start, stop, keep, more, or less)
+Reporting- Status, baselines, Milestones, Burndown, Risks & Issues, Defects & Blockers, New & Outstanding items
+Best Practice- avoid common traps of sprint planning, stand up meetings, retrospective
+
+Agile Transformation- Scrum Master needs to be impartial, avoiding common problems that prevent an efficient, productive standup (same people always talking, no one talking, too long meeting, etc.)
+
+Agile Process Implementation- (Phase 1)Form Agile Committee, A3 Root Cause Analysis, Agile Training, Create Product Backlog, Sprint Zero Planning
+		(Phase 2) Create Scrumboard, Daily Standup Meetings, Sprint Review, Retrospective, Reporting
+		(Phase 3) Agile Coaches, Formal Training, New Hires (Scrum Committee>{Scrum of Scrums, Improved Reporting, Quarterly/A3 RCA})

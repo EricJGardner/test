@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	//fahrenheit to celcius conversion function
+	function toCelcius(fahrenheit){
+		return (5/9) * (fahrenheit-32);
+	}
+	console.log(toCelcius(75).toFixed(2));
+	
+	//Gratuity exercise from JSFunctions slide 10
+	let billAmount = 100.85;
+	
+	function gratuity(){
+		return billAmount * 0.2;
+	}
+	console.log("The gratuity on your bill of ", billAmount, " is ", gratuity(billAmount));
+	
+	function totalWithGrat(amount){
+		return amount + gratuity();
+	}
+	
+	console.log("Your total including gratuity is $" + totalWithGrat(billAmount).toFixed(2));
+</script>	
+</body>
+</html>

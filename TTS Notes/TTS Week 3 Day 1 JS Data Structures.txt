@@ -1,0 +1,80 @@
+TTS Week 3 Day 1 11/30/20 Javascript Data Structures
+Data Types:
+Strings
+Numbers
+Booleans-can only be true or false
+Arrays-can take multiple values, are ordered lists with methods to traverse and edit its contents.The ordered list has a zero based index, contents can be dynamic in length and types
+ syntax: let fruits ={"Apple", "banana", "mango"];
+ let scores = [1,3,2,9];
+spaces and lines don't matter
+let fruits = ["apple",   //index is 0
+		"banana",  //index is 1
+		"mango"];  //index is 2
+    length of ^ array is 3
+to print apple console.log(fruits[0]);
+for (let i = 0; i <=2; i++) {
+console.log(fruits[i]);
+}
+^prints each fruit in order (traverses the array)
+to change "mango" to "papaya"
+fruits[2] = "papaya";
+//pluralizing all the fruits in array
+for (let i = 0; i <= 2; i++); {
+ tempfruit = fruits[i];
+tempfruit = tempfruit + "s";
+fruits[i] = tempfruit;
+console.log (fruits[i];
+}
+for (let i = 0; i <=2; i++); {
+console.log (fruits[i]0);
+or, even better
+for (let i=0; i<=2; i++) {
+fruits[i] = fruits[i] + "s";
+console.log (fruits[i]);
+}
+
+Arrays have a 'length' property
+let sizeOfArray = fruits.length;
+console.log("the length of the array is ", sizeOFArray);
+arrays have bult-in properties
+use "dot" notation to access those properties
+for (let i = 0; i <= fruits.length -1; i++);
+or (let i = 0; i < fruits.length; i++);
+to add another element to array
+ fruits[3] = "Orange";
+Push and Pop functions- always takes or adds to last element in array, the one with the highest index
+let teachers = ["Shane", "Zack"];
+teachers.push("Assaf"); //["Shane", "Zack", "Assaf"]
+let teacher1 = teachers.pop();  //teacher 1 == "Assaf", teachers == ["Shane", "Zack"]
+Shift and Unshift (from the front of the array)
+let teachers = ["Assaf", "Shane"];
+teachers.unshift("Zack"); //["Zack", "Assaf", "Shane"]
+let teacher = teachers.shift(): //teacher = "Zack", teachers = ["Assaf", "Shane"]
+slice() needs to accept 2 arguments, start and end, and returns a new array. This new array will hold the elemnts from the given start index up to the one right before the specified index number
+splice() is a mustating function that takes at least 2 arguments. It tells us where to start, how many items to remove from the starting point, and then what to replace it with
+let a = [1,2,3,4];
+a.slice(0,2); //[1,2]
+"abcd".slice(1,3) //"bc"
+a.splice(1,2,'a','b'); //a is [1,'a','b',4]
+
+.toString() converts arrays to strings
+teachers=["Assaf", "Shane"];
+teachers.toString(); "Assaf, Shane"
+teachers.join('&'); "Assaf&Shane"
+
+ref: array.html
+go over slides 7-11
+
+Objects-a collection of data, but is unordered and has mor functionality.
+An object is a set of keys and values, like a dictionary.
+Keys are like variables, must start with a lowercase letter
+let course= {  //declares an object
+	name: "Javascript Applications",
+	awesome: true
+}
+Object properties can be accessed with either dot notation course.name
+or bracket notation course["name]
+properties of objects can be updated after being created course.name = "Super duper class";
+Mutating: you can also assign totally new keys or delete existing ones
+course.fun = true; //add a property
+delete course.name; //remove a property

@@ -1,0 +1,47 @@
+TTS Week 3 Day 2 12/01/20 Javascript Functions 1
+
+REVIEW-
+ for-loops: use them when you know how many times you want to repeat it
+ while-loops: use them when the number of repetitions is indeterminate (until something is true or false)
+ do-while loops: similar to the while-loop except that the code always executes at least once before the condition is checked. Possible use would be for taking user input and validating the input. We would ask for input, then evaluate thether it is valid. If not, ask for input again,etc. 
+while-loop can execute 0 times "top of the loop test"
+do-while loop will always execute at least once "bottom of the loop test"
+console.log(arrayName.toString()); <--"pretty printing the contents of array
+
+Break vs. Continue
+A break statement jumps out of the loop
+A continue statement jumps to the next iteration
+
+Switch Statements
+Similar to an if statement, but are easier/cleaner to write.Can replace an if statement with lots of branches. Once a case is met, the switch will execute all of the following cases unless you use "break"
+
+SCOPE OF VARIABLES
+If you declare i within the loop, the scope of i is limited to the loop. after loop closes, i is no longer in scope and will produce an error.
+If i is declared outside of loop,scope is global 
+"hoisting"-JS default behavior of moving declarations to the top of the current scope (to the top of current script or current function)
+-increasing the scope of the variable
+
+FUNCTIONS
+-blocks of code that are meant to be a)self-contained b) reusable
+Syntax- keyword "function, followed by name, then variables in ()
+function myFunction(p1,p2) {
+  return p1*p2  //function returns the product of p1 and p2
+}
+function parameters (also called arguments) are listed inside ()
+functions execute when they are "invoked" or "called"
+Functions can return a value we explicitly tell it to return. A function evaluates to its return value when run. The return keyword can also be used strategically to exit a code block as it terminates the block execution code immediately.
+
+In javaScript, there are 2 types of functions:
+those that return a value:
+
+those that don't: will return "undefined"
+
+ES6 function- const thisthing = ()=>{}   -most updated version
+
+function init(a,b){    a & b are arguments
+   return a + b; //work goes in here
+}
+console.log(init(5,4));   5&4 are parameters, used to call a function,  number of arguments must match # of parameters
+JavaScript is an asynchronous language- it reads line by line, so you can't declare a variable after using it
+However, functions don't behave this way, so you can call a function anywhere on the page as long as it is defined somewhere on the page.
+Hoisting is moving something up the page so variables, etc are read in the correct order fo scope

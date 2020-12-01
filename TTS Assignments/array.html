@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- // 1. setup an array
+	// 2. place 1 in that array
+	//3. keep doing this 30 times:: double the value in the last element in the array and add that value to the array
+	//4. output the last value of the array -->
+	<script type="text/javascript">
+
+let days = [];
+days.push(1);
+for (var i = 1; i < 30; i++) {
+	days.push(days[i-1] *2);
+
+}
+console.log(days.toString());
+// How many days will it take to get to $1000 or more?
+let numberOfDays;
+let stopLoop = false;
+for (let i=0; i<=days.length; i++) {
+	if (days[i] >= 100000 && stopLoop == false) {
+		numberOfDays = i+1;
+		stopLoop = true;
+		//break; //don't do this, but it would stop the loop
+	}
+}
+	console.log("You will have $1000 in ", numberOfDays, "days");
+
+</script>
+
+</body>
+</html>
